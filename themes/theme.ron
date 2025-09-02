@@ -194,7 +194,7 @@
                     (kind: Text("|")),
                     (kind: Property(Status(RandomV2(on_label: "   ", off_label: "   ", on_style: (fg: "#ca9ee6"), off_style: (fg: "#7f849c"))))),
                     (kind: Text("|")),
-                    (kind: Property(Status(ConsumeV2(on_label: "  ", off_label: "   ", oneshot_label: "   ", on_style: (fg: "#ca9ee6"), off_style: (fg: "#7f849c"), oneshot_style: (fg: "#ca9ee6"))))),
+                    (kind: Property(Status(ConsumeV2(on_label: "   ", off_label: "   ", oneshot_label: "   ", on_style: (fg: "#ca9ee6"), off_style: (fg: "#7f849c"), oneshot_style: (fg: "#ca9ee6"))))),
                     (kind: Text("|")),
                     (kind: Property(Status(SingleV2(off_label: " 󰎅  ", on_label: " 󰎄  ", oneshot_label: " 󱫜  ", on_style: (fg: "#ca9ee6"), off_style: (fg: "#7f849c"), oneshot_style: (fg: "#ca9ee6")))))
                 ]
