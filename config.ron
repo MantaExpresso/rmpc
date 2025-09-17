@@ -2,10 +2,10 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
-    address: "127.0.0.1:6600",
+    address: "/home/manta/.mpd/socket",
     password: None,
     theme: Some ("/home/manta/.config/rmpc/themes/theme"),
-    cache_dir: None,
+    cache_dir: "/home/manta/.cache/rmpc/",
     lyrics_dir: "~/.config/rmpc/lyrics/",
     on_song_change: ["~/.config/rmpc/lyricfetch"],
     volume_step: 5,
