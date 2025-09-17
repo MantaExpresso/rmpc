@@ -205,9 +205,9 @@
             (
                 left: [
                     (kind: Text(" [")),
-                    (kind: Property(Status(Elapsed)), style: (fg: "#b4befe")),
+                    (kind: Property(Status(Elapsed)), style: (fg: "#cdd6f4")),
                     (kind: Text(" - ")),
-                    (kind: Property(Status(Duration)), style: (fg: "#b4befe")),
+                    (kind: Property(Status(Duration)), style: (fg: "#cdd6f4")),
                     (kind: Text("]")),
                 ],
                 right: [
