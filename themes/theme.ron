@@ -97,7 +97,7 @@
             ),
 
             (
-                size: "4%",
+                size: "3",
                 borders: "ALL",
                 pane: Split(
                     direction: Horizontal,
@@ -126,7 +126,7 @@
                         ),
 
                         (
-                        size: "5%",
+                        size: "13",
                         pane: Pane(Property(
                             content: [
                                 (kind: Property(Status(Elapsed))),
@@ -170,7 +170,7 @@
 
             (
 
-                size: "4%",
+                size: "3",
 
                 pane: Split(
 
