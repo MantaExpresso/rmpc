@@ -152,6 +152,15 @@
 
                             panes: [
 
+                                // (
+
+                                //    size: "2%",
+
+                               //     borders: "NONE",
+
+                              //      pane: Pane(ProgressBar),
+
+                             //  ),
                                 (
 
                                     size: "100%",

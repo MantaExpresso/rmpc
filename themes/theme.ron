@@ -41,8 +41,8 @@
     ),
     
     progress_bar: (
-       // symbols: ["", "", "", "", ""],
-       symbols: ["█", "█",""," ","",],
+      //  symbols: ["", "", "", "", ""],
+        symbols: ["█", "█",""," "," ",],
         track_style: (fg: "#cba6f7"),
         elapsed_style: (fg: "#cba6f7"),
         thumb_style: (fg: "#cba6f7", bg: "#1e2030"),
@@ -97,13 +97,46 @@
             ),
 
             (
-
-                size: "3",
-
+                size: "4%",
                 borders: "ALL",
+                pane: Split(
+                    direction: Horizontal,
+                    panes: [
+                        (
+                            size: "1",
+                            pane: Pane(Property(
+                            content: [
+                                (kind: Text(" ")),
+                            ],
+                            )),
+                        ),
 
-                pane: Pane(ProgressBar),
+                        (
+                            size: "100%",
+                            pane: Pane(ProgressBar)
+                        ),
 
+                        (
+                            size: "1",
+                            pane: Pane(Property(
+                            content: [
+                                (kind: Text(" ")),
+                            ],
+                            )),
+                        ),
+
+                        (
+                        size: "5%",
+                        pane: Pane(Property(
+                            content: [
+                                (kind: Property(Status(Elapsed))),
+                                (kind: Text(" / ")),
+                                (kind: Property(Status(Duration))),
+                            ], 
+                        )),
+                        ),
+                    ], 
+                ),
             ),
 
             (
@@ -137,7 +170,7 @@
 
             (
 
-                size: "4",
+                size: "4%",
 
                 pane: Split(
 
