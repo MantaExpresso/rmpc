@@ -27,7 +27,7 @@
         bar_symbols: ['▁', '▂', '▃', '▄', '▅', '▆', '▇', '█'],
         inverted_bar_symbols: ['▔', '🮂', '🮃', '▀', '🮄', '🮅', '🮆', '█'],
         bar_width: 1,
-        orientation: Bottom,
+        orientation: Horizontal,
         bar_color: Gradient({
 
               0: "rgb(203, 166, 247)",
