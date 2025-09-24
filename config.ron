@@ -172,6 +172,12 @@
                                 ),
 
                                 (
+                                size: "27%",
+                                borders: "ALL",
+                                pane: Pane(Cava),
+                                ),
+
+                                (
 
                                     size: "100%",
 
@@ -209,24 +215,9 @@
                                                             size: "100%",
                                                             borders: "ALL",
 
-                                                            pane: Pane(Cava),
+                                                            pane: Pane(Lyrics),
 
                                                         ),
-                                                        (
-                                                            size: "100%",
-                                                            borders: "ALL",
-                                                            pane: Split(
-                                                                direction: Vertical,
-                                                                panes: [
-                                                                    (
-                                                                    size: "100%",
-                                                                    pane: Pane(Lyrics)
-                                                                ),
-
-                                                                ]
-                                                            ),
-                                                        ),
-
                                                     ]
 
                                                 ),
