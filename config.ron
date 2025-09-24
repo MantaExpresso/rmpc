@@ -2,14 +2,14 @@
 #![enable(unwrap_newtypes)]
 #![enable(unwrap_variant_newtypes)]
 (
-    address: "/home/manta/.mpd/socket",
+    address: "/home/manta/music/mpd/socket",
     password: None,
     theme: Some ("/home/manta/.config/rmpc/themes/theme"),
     cache_dir: "/home/manta/.cache/rmpc/",
     lyrics_dir: "~/.config/rmpc/lyrics/",
     on_song_change: ["~/.config/rmpc/lyricfetch"],
     volume_step: 5,
-    max_fps: 30,
+    max_fps: 60,
     scrolloff: 0,
     wrap_navigation: false,
     enable_mouse: true,
