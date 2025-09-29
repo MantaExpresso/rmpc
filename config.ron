@@ -247,14 +247,14 @@
                 panes: [
                     (
                         size: "100%",
-                        border: "ALL",
+                        borders: "ALL",
                         pane: Pane(Directories),
                     ),
                     (
 
                         size: "100%",
 
-                        borders: "TOP",
+                        borders: "ALL",
 
                         pane: Pane(Queue),
 
