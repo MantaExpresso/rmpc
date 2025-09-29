@@ -42,10 +42,10 @@
     
     progress_bar: (
       //  symbols: ["", "", "", "", ""],
-        symbols: ["█", "█",""," "," ",],
-        track_style: (fg: "#cba6f7"),
+        symbols: ["█", "█","","█"," ",],
+        track_style: (fg: "#313244"),
         elapsed_style: (fg: "#cba6f7"),
-        thumb_style: (fg: "#cba6f7", bg: "#1e2030"),
+        thumb_style: (fg: "#cba6f7", bg: "#313244"),
     ),
     scrollbar: (
         symbols: ["│", "┃", "󰚷", "󰚶"],
@@ -230,7 +230,7 @@
                     (kind: Text("|")),
                     (kind: Property(Status(RandomV2(on_label: "   ", off_label: "   ", on_style: (fg: "#ca9ee6"), off_style: (fg: "#7f849c"))))),
                     (kind: Text("|")),
-                    (kind: Property(Status(ConsumeV2(on_label: "   ", off_label: "   ", oneshot_label: "   ", on_style: (fg: "#ca9ee6"), off_style: (fg: "#7f849c"), oneshot_style: (fg: "#ca9ee6"))))),
+                    (kind: Property(Status(ConsumeV2(on_label: "   ", off_label: "   ", oneshot_label: "   ", on_style: (fg: "#f38ba8"), off_style: (fg: "#7f849c"), oneshot_style: (fg: "#b4befe"))))),
                     (kind: Text("|")),
                     (kind: Property(Status(SingleV2(off_label: " 󰎅  ", on_label: " 󰎄  ", oneshot_label: " 󱫜  ", on_style: (fg: "#ca9ee6"), off_style: (fg: "#7f849c"), oneshot_style: (fg: "#ca9ee6")))))
                 ]
@@ -238,9 +238,7 @@
             (
                 left: [
                     (kind: Text(" [")),
-                    (kind: Property(Status(Elapsed)), style: (fg: "#cdd6f4")),
-                    (kind: Text(" - ")),
-                    (kind: Property(Status(Duration)), style: (fg: "#cdd6f4")),
+                    (kind: Text("PUT SOMETHING HEREEEE"), style: (modifiers: "Dim")),
                     (kind: Text("]")),
                 ],
                 right: [
