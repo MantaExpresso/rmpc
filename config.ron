@@ -66,7 +66,7 @@
             "v":       ToggleSingle,
             "b":       SeekBack,
             "~":       ShowHelp,
-            "I":       ShowCurrentSongInfo,
+            "i":       ShowCurrentSongInfo,
             "O":       ShowOutputs,
             "P":       ShowDecoders,
         },
@@ -75,14 +75,14 @@
             "j":         Down,
             "h":         Left,
             "l":         Right,
-            "<Up>":      Up,
-            "<Down>":    Down,
-            "<Left>":    Left,
-            "<Right>":   Right,
-            "<C-k>":     PaneUp,
-            "<C-j>":     PaneDown,
-            "<C-h>":     PaneLeft,
-            "<C-l>":     PaneRight,
+            "<Up>":      PaneUp,
+            "<Down>":    PaneDown,
+            "<Left>":    PaneLeft,
+            "<Right>":   PaneRight,
+           // "<C-k>":     PaneUp,
+           // "<C-j>":     PaneDown,
+           // "<C-h>":     PaneLeft,
+           // "<C-l>":     PaneRight,
             "<C-u>":     UpHalf,
             "N":         PreviousResult,
             "a":         Add,
@@ -94,7 +94,7 @@
             "<C-Space>": InvertSelection,
             "G":         Bottom,
             "<CR>":      Confirm,
-            "i":         FocusInput,
+            //"i":         FocusInput,
             "J":         MoveDown,
             "<C-d>":     DownHalf,
             "/":         EnterSearch,
@@ -109,7 +109,7 @@
             "<C-s>":   Save,
             "a":       AddToPlaylist,
             "d":       Delete,
-            "i":       ShowInfo,
+            "I":       ShowInfo,
             "C":       JumpToCurrent,
         },
     ),
@@ -242,7 +242,27 @@
 
         ),        (
             name: "Directories",
-            pane: Pane(Directories),
+            pane: Split(
+                direction: Vertical,
+                panes: [
+                    (
+                        size: "100%",
+                        border: "ALL",
+                        pane: Pane(Directories),
+                    ),
+                    (
+
+                        size: "100%",
+
+                        borders: "TOP",
+
+                        pane: Pane(Queue),
+
+                    ),
+                ]
+
+            ),
+            
         ),
         (
             name: "Artists",
